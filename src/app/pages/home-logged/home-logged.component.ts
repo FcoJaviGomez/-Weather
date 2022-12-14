@@ -27,7 +27,7 @@ export class HomeLoggedComponent {
   }
 
   get favoriteCities() {
-    return this.cityService.favoriteCities
+    return this.userService.user.favoriteCities;
   }
 
 

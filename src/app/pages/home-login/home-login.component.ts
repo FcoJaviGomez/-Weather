@@ -14,7 +14,7 @@ export class HomeLoginComponent implements OnInit {
   public validation: any = ["", ""]
 
   constructor(public router: Router, public userService: UserService) {
-    this.user = new User("", "", "")
+    this.user = new User("", "", "", [])
   }
 
   login() {

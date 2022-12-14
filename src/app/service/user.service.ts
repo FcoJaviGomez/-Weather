@@ -5,14 +5,14 @@ import { User } from '../models/user';
   providedIn: 'root'
 })
 export class UserService {
-  private users = [new User("javiergomez742@gmail.com", "1234", "Admin"),
-  new User("hpecds@gmail.com", "314", "Admin")]
+  private users = [new User("javiergomez742@gmail.com", "1234", "Admin", []),
+  new User("hpecds@gmail.com", "314", "Admin", [])]
 
   public user: User;
   public userLogged: boolean
 
   constructor() {
-    this.user = new User("", "", "")
+    this.user = new User("", "", "", [])
     this.userLogged = false
   }
 
