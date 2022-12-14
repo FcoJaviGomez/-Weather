@@ -1,0 +1,59 @@
+.login {
+    background-image: url("../../../assets/Earth.jpeg");
+    background-size: cover;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 20px;
+}
+
+.div {
+    width: 300px;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    border-radius: 5px;
+    background: rgba(0, 0, 0, 0.543);
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.texto {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: var(--tertiaryColor);
+}
+
+.div_input {
+    height: 30px;
+    background: var(--primaryColor);
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
+    padding-left: 5px;
+    color: var(--secondaryColor);
+}
+
+.div_boton {
+    width: 100px;
+    height: 40px;
+    background: var(--tertiaryColor);
+    border-radius: 10px;
+    font-size: 18px;
+    color: var(--secondaryColor);
+    border: none;
+}
+
+.div_boton:hover {
+    color: var(--primaryColor);
+    border: solid 2px var(--primaryColor);
+}

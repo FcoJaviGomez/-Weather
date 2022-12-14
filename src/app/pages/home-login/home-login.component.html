@@ -1,0 +1,20 @@
+<div class="login">
+    <form class="div" #inicioForm="ngForm" (ngSubmit)="login()">
+        <div class="texto">Login</div>
+        <div class="caja1">
+            <input class="div_input" type="text" name="email" [(ngModel)]="user.email" #email="ngModel"
+                placeholder="Email" [ngClass]="{'is-invalid': inicioForm.submitted && email.invalid }" required>
+            <div class="invalid-feedback col" *ngIf="inicioForm.submitted && email.invalid">
+                <p *ngIf="email.errors">
+                    Obligatory field</p>
+            </div>
+        </div>
+        <div class="caja1">
+            <input class="div_input" type="password" name="password" [(ngModel)]="user.password" #password="ngModel"
+                placeholder="Password" [ngClass]="{'is-invalid': inicioForm.submitted && password.invalid }" required>
+            <div class="invalid-feedback col" *ngIf="inicioForm.submitted && password.invalid">
+                <p *ngIf="password.errors">
+                    Obligatory field</p>
+            </div>
+        </div>
+        <button class="div_boton">Sign in</button>

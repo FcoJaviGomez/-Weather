@@ -1,0 +1,41 @@
+<body class="body">
+    <div class="div_select">
+        <div class="form-group ">
+            <select class="form-select div_select_cities bg-secondary" style="--bs-bg-opacity: .2;" name="citys" #city>
+                <option hidden value="seleciona mantenimiento">select city
+                </option>
+                <option class="texto" *ngFor="let city of cities" [value]="city.id">
+                    {{city.name}}
+                </option>
+            </select>
+        </div>
+        <button type="reset" on-click=getCity(city.value) class="div_botton"><i
+                class="fa-solid fa-magnifying-glass-location"></i></button>
+    </div>
+    <div class="div_favorite">
+        <p>favorite cities</p>
+        <div class="div_favorite_cities" *ngIf="favoriteCities.length>0">
+            <div class="div_favorite_city" *ngFor="let city of favoriteCities; let index=index" value="city.id">
+                <button type="reset" on-click=getSelectCity(city.id) class="div_botton_city">{{city.name}}</button>
+                <button class="div_botton_delete" on-click="delete(city)" type="reset"><i
+                        class="fa-solid fa-x"></i></button>
+            </div>
+        </div>
+    </div>
+    <div class="div_weather">
+        <div class="card" *ngIf="selectCity">
+            <div>The weather in:</div>
+            <div class="card_name">{{selectCity.name}}</div>
+            <div class="card_wearther">
+                <div>
+                    <img src="http://openweathermap.org/img/wn/{{selectCity.weather[0].icon}}@2x.png" />
+                </div>
+                <div class="card_wearther_temperature">{{(selectCity.main.temp-273).toFixed(0)}}°</div>
+            </div>
+        </div>
+        <google-map class="card" *ngIf="selectCity" width="270" height="600" [center]="position">
+            <map-marker [position]="position" [label]="label" [title]="title">
+            </map-marker>
+        </google-map>
+    </div>
+</body>

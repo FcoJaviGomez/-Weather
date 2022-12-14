@@ -1,0 +1,154 @@
+.body {
+    background-image: url("../../../assets/Earth.jpeg");
+    background-size: cover;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 100vh;
+    gap: 30px;
+    padding-top: 120px;
+    padding-bottom: 100px;
+}
+
+.div_select {
+    width: 70vw;
+    height: 100px;
+    box-shadow: 0px 0px 10px 1px var(--tertiaryColor);
+    background: var(--quaternaryColor);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.div_select_cities {
+    height: 40px;
+    width: 300px;
+}
+
+.div_select_cities:focus {
+    border: none;
+    box-shadow: none;
+}
+
+.div_botton {
+    height: 40px;
+    width: 40px;
+    font-size: 20px;
+    background: #c0dae5;
+    border-radius: 5px;
+    border: none;
+}
+
+.div_botton:hover {
+    background: var(--tertiaryColor);
+}
+
+.div_favorite {
+    width: 70vw;
+    min-height: 100px;
+    box-shadow: 0px 0px 10px 1px var(--tertiaryColor);
+    background: var(--quaternaryColor);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    font-size: 25px;
+}
+
+.div_favorite_cities {
+    width: 60vw;
+    min-height: 100px;
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.div_favorite_city {
+    min-width: 200px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+    background: var(--tertiaryColor);
+    padding: 10px;
+}
+
+.div_botton_city {
+    min-width: 100px;
+    height: 40px;
+    border: none;
+    background: var(--tertiaryColor);
+    font-size: 16px;
+}
+
+.div_botton_delete {
+    width: 40px;
+    height: 40px;
+    border: none;
+    background: var(--tertiaryColor);
+    font-size: 16px;
+}
+
+.div_botton_city:hover {
+    color: var(--secondaryColor);
+}
+
+.div_botton_delete:hover {
+    color: var(--secondaryColor);
+}
+
+.div_weather {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    width: 300px;
+    height: 250px;
+    box-shadow: 0px 0px 10px 1px var(--tertiaryColor);
+    background: var(--quaternaryColor);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+}
+
+.card_name {
+    font-size: 25px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.card_wearther {
+    width: 200px;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.card_wearther_temperature {
+    font-size: 55px;
+    font-weight: bold;
+}

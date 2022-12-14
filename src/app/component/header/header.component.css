@@ -1,0 +1,40 @@
+.header {
+    height: 8vh;
+    width: 100%;
+    background-color: var(--quaternaryColor);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+    left: 0px;
+    top: 0px;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.header_home {
+    font-family: 'Rubik Vinyl', cursive;
+    font-size: 30px;
+    color: var(--tertiaryColor);
+    text-decoration: none;
+}
+
+.sign_off {
+    height: 30px;
+    width: 125px;
+    color: var(--tertiaryColor);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.sign_off:hover {
+    border-radius: 5px;
+    background: var(--tertiaryColor);
+    color: var(--quaternaryColor);
+}
